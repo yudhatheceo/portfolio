@@ -31,20 +31,33 @@ nav ul li a {
   font-weight: 600;
 }
 
-.p.portfolio-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.portfolio-grid {
+  display: flex; /* Aligns items in a row */
+  flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+  justify-content: center; /* Centers the items */
+  gap: 20px; /* Adds spacing between thumbnails */
 }
 
 .portfolio-item {
-  width: 300px;
+  width: 300px; /* Standardized width */
   padding: 15px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  text-align: center;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio-item img {
+  width: 100%; /* Ensures images fit perfectly */
+  height: 200px; /* Keeps all images uniform */
+  object-fit: cover; /* Prevents distortion */
+  border-radius: 5px;
+}
+
+/* Hover effect for slight enlargement */
+.portfolio-item:hover {
+  transform: scale(1.05);
 }
 
 .portfolio-item img {
