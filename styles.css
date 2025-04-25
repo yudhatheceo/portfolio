@@ -2,20 +2,22 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #2c3e50, #4ca1af);
-  color: white;
+  background-color: #f8f8f8;
+  color: #333;
   text-align: center;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  padding: 30px;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
+  background: #333;
 }
 
 nav ul li {
@@ -26,28 +28,31 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 600;
 }
 
-nav ul li a:hover {
-  color: #f1c40f;
-}
-
-.project-grid {
+.portfolio-grid {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-.project-item {
-  width: 250px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease-in-out;
+.portfolio-item {
+  width: 300px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-item:hover {
-  transform: scale(1.05);
+.portfolio-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #222;
+  color: white;
 }
